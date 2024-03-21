@@ -1,0 +1,1 @@
+.\mongodump --uri mongodb+srv://backup-script:a4j4RpvsWXLl9pYo@cluster0.63azr.mongodb.net/ultimate-resource-kit

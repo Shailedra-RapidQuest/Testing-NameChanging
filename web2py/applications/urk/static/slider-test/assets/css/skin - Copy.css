@@ -1,0 +1,263 @@
+/* ************************************************************
+:: Template Name: AppMax - App Landing Page Template
+:: Template URI: http://event-theme.com/
+:: Template Author Name: plexdesign
+:: Template Author URI: https://themeforest.net/user/plexdesigns
+:: Version: 1.0.0
+:: Created: 17 May 2020
+************************************************************ 
+*
+*
+******* :: INDEX OF SKIN CSS :: *******
+
+:: 1.0 COLOR SWITCHER AREA CSS
+
+****************************** */
+
+/* ******************************
+:: 1.0 COLOR SWITCHER AREA CSS
+****************************** */
+.switcher {
+    position: fixed;
+    height: auto;
+    width: 250px;
+    top: 20%;
+    left: -250px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    z-index: 9999;
+}
+
+.color-btn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #2B2B35;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    top: 0;
+    left: auto;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.3s ease 0s;
+}
+
+.color-btn:hover {
+    opacity: 1;
+}
+
+.color-switcher-area {
+    max-height: 475px;
+    background-color: #fff;
+    border-radius: 0 0 4px;
+    padding: 25px 25px 15px 25px;
+    overflow-x: hidden;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    z-index: 9999;
+}
+
+.switcher.on {
+    left: 0;
+    -webkit-box-shadow: 3px 2px 3px rgba(0, 0, 0, .15);
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, .15);
+    border-bottom-right-radius: 16px;
+}
+
+.color-switcher-area h4 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+input[id*=color] {
+    display: none;
+}
+
+input[id*="color"]:checked + label::before {
+    position: absolute;
+    content: '\f00c';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label[class*=color] {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    
+}
+
+label[class*=color]:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.color-switcher-area .single-preview:hover > a > img {
+    transform: translateY(-5px);
+}
+
+/*COLOR PICKER*/
+.color1 {
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.97), rgba(55, 46, 149, 0.97), rgba(83, 49, 177, 0.96), rgba(114, 48, 205, 0.96), rgba(150, 41, 230, 0.97));
+}
+
+.color2 {
+    background-image: linear-gradient(45deg,#fe2983 0,#ff6f61 50%,#fc9e21 110%);
+}
+
+.color3 {
+    background-image: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+}
+
+/*BACKGROUND COLORS*/
+.bg-overlay::after,
+.benifits-item:after,
+.single-promo::after {
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.97), rgba(55, 46, 149, 0.97), rgba(83, 49, 177, 0.96), rgba(114, 48, 205, 0.96), rgba(150, 41, 230, 0.97));
+}
+
+.section-heading > h2::after,
+.btn-purple,
+.app-screenshots.owl-carousel button.owl-dot.active,
+.testimonial-area .owl-carousel button.owl-dot.active,
+.subscribe-form button,
+.widget-items li a:hover::before,
+.widget-items li a:focus::before,
+.widget-items li a.active::before,
+.contact-us .social-icon,
+.contact-box button,
+.blockquote::after {
+    background-color: #7c4fe0;
+}
+
+.app-screenshots.owl-carousel button.owl-dot.active,
+.testimonial-area .owl-carousel button.owl-dot.active {
+    -webkit-box-shadow: 0 1px 5px #7c4fe0;
+    box-shadow: 0 1px 5px #7c4fe0;
+}
+
+.btn-purple {
+    border-color: #7c4fe0;
+}
+
+a:hover,
+a:focus,
+.play-icon,
+.service-icon > i,
+.widget-items li a.active,
+.comments-content > h5 > a:last-child {
+    color: #7c4fe0;
+}
+
+.text-primary,
+.single-team:hover .team-name {
+    color: #7c4fe0 !important;
+}
+
+/*Background Style 2*/
+.gradient-2 .bg-overlay::after,
+.gradient-2 .benifits-item:after,
+.gradient-2 .single-promo::after {
+    background-image: linear-gradient(45deg,#fe2983 0,#ff6f61 50%,#fc9e21 110%);
+}
+
+.gradient-2 .section-heading > h2::after,
+.gradient-2 .btn-purple,
+.gradient-2 .app-screenshots.owl-carousel button.owl-dot.active,
+.gradient-2 .testimonial-area .owl-carousel button.owl-dot.active,
+.gradient-2 .subscribe-form button,
+.gradient-2 .widget-items li a:hover::before,
+.gradient-2 .widget-items li a:focus::before,
+.gradient-2 .widget-items li a.active::before,
+.gradient-2 .contact-us .social-icon,
+.gradient-2 .contact-box button,
+.gradient-2 .blockquote::after {
+    background-color: #ff4c3b;
+}
+
+.gradient-2 .app-screenshots.owl-carousel button.owl-dot.active,
+.gradient-2 .testimonial-area .owl-carousel button.owl-dot.active {
+    -webkit-box-shadow: 0 1px 5px #ff4c3b;
+    box-shadow: 0 1px 5px #ff4c3b;
+}
+
+.gradient-2 .btn-purple {
+    border-color: #ff4c3b;
+}
+
+.gradient-2 a:hover,
+.gradient-2 a:focus,
+.gradient-2 .play-icon,
+.gradient-2 .service-icon > i,
+.gradient-2 .widget-items li a.active,
+.gradient-2 .comments-content > h5 > a:last-child {
+    color: #ff4c3b;
+}
+
+.gradient-2 .text-primary,
+.gradient-2 .single-team:hover .team-name {
+    color: #ff4c3b !important;
+}
+
+/*Background Style 3*/
+.gradient-3 .bg-overlay::after,
+.gradient-3 .benifits-item:after,
+.gradient-3 .single-promo::after {
+    background-image: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+}
+
+.gradient-3 .section-heading > h2::after,
+.gradient-3 .btn-purple,
+.gradient-3 .app-screenshots.owl-carousel button.owl-dot.active,
+.gradient-3 .testimonial-area .owl-carousel button.owl-dot.active,
+.gradient-3 .subscribe-form button,
+.gradient-3 .widget-items li a:hover::before,
+.gradient-3 .widget-items li a:focus::before,
+.gradient-3 .widget-items li a.active::before,
+.gradient-3 .contact-us .social-icon,
+.gradient-3 .contact-box button,
+.gradient-3 .blockquote::after {
+    background-color: #d43396;
+}
+
+.gradient-3 .app-screenshots.owl-carousel button.owl-dot.active,
+.gradient-3 .testimonial-area .owl-carousel button.owl-dot.active {
+    -webkit-box-shadow: 0 1px 5px #d43396;
+    box-shadow: 0 1px 5px #d43396;
+}
+
+.gradient-3 .btn-purple {
+    border-color: #d43396;
+}
+
+.gradient-3 a:hover,
+.gradient-3 a:focus,
+.gradient-3 .play-icon,
+.gradient-3 .service-icon > i,
+.gradient-3 .widget-items li a.active,
+.gradient-3 .comments-content > h5 > a:last-child {
+    color: #d43396;
+}
+
+.gradient-3 .text-primary,
+.gradient-3 .single-team:hover .team-name {
+    color: #d43396 !important;
+}

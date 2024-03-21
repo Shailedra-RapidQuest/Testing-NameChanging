@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider Test</title>
+	 	<link rel="stylesheet" href="assets/css/app/main.css" />
+
+        <link rel="stylesheet" href="assets/css/vendor/magic/magic.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate/animate.min.css">
+
+        <link rel="stylesheet" href="assets/css/jquery.desoslide.css">
+
+        <style type="text/css">
+        	.img-responsive {
+				    width: 100%;
+				}
+        </style>
+
+</head>
+<body>
+
+
+	<!-- Demo 3 -->
+                <h3 class="page-header">
+                    <span class="label label-danger">3</span> Autostarting slideshow
+                </h3>
+
+                <p>The 1-indexed thumb is displayed first, no caption is provided.</p>
+
+                <div class="row">
+
+                    <!-- Result 3 -->
+                    <article class="col-lg-7 col-md-7">
+                        <h4>Result</h4>
+
+                        <div class="row">
+                            <div id="slideshow3" class="col-lg-11 col-md-10"></div>
+
+                            <div class="col-lg-1 col-md-2 text-center">
+                                <ul id="slideshow3_thumbs" class="desoslide-thumbs-vertical list-inline">
+                                    <li>
+                                        <a href="assets/img/demos/demo3/city.jpg">
+                                            <img src="assets/img/demos/demo3/city_thumb.jpg" alt="city">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="assets/img/demos/demo3/building.jpg">
+                                            <img src="assets/img/demos/demo3/building_thumb.jpg" alt="building">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="assets/img/demos/demo3/eiffel.jpg">
+                                            <img src="assets/img/demos/demo3/eiffel_thumb.jpg" alt="eiffel">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="assets/img/demos/demo3/bridge.jpg">
+                                            <img src="assets/img/demos/demo3/bridge_thumb.jpg" alt="bridge">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+	<!-- <script src="assets/js/vendor/jquery/jquery.js"></script> -->
+	    <script src="assets/js/jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="assets/js/vendor/highlight/highlight.pack.js"></script>
+
+	<script src="assets/js/jquery.desoslide.min.js"></script>
+
+	<script type="text/javascript">
+	$('#slideshow3').desoSlide({
+        thumbs: $('#slideshow3_thumbs li > a'),
+        auto: {
+            start: true
+        },
+        first: 1,
+        interval: 6000
+    });
+	</script>
+
+
+</body>
+</html>
