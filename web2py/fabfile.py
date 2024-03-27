@@ -16,7 +16,7 @@ INSTALL_SCRIPT = "setup-web2py-nginx-uwsgi-ubuntu.sh"
 now =  datetime.datetime.now()
 applications = '/home/www-data/web2py/applications'
 
-def create_user(username):
+def create_user(username 
     """fab -H root@host create_user:username"""
     password = getpass.getpass('password for %s> ' % username)
     run('useradd -m -G www-data -s /bin/bash -p %s %s' % (crypt.crypt(password, 'salt'), username))
